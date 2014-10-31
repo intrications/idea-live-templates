@@ -1,0 +1,14 @@
+<templateSet group="user">
+  <template name="staticstartactivity" value="public static void startActivity(Context context) {&#10;    Intent intent = new Intent(context, $ACTIVITY_NAME$.class);&#10;    context.startActivity(intent);&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTIVITY_NAME" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+</templateSet>
